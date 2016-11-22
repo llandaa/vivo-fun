@@ -1,0 +1,344 @@
+*{
+	margin: 0;padding: 0;
+}
+/*****顶部导航******/
+nav{
+	background: #008cd7;
+}
+nav .brand-logo{
+	padding-top: 5.5px!important;
+	padding-left: 20px!important;
+}
+nav ul a{
+	font-size: 16px;
+}
+nav ul a:hover {
+   background: #008cd7;
+}
+nav #nav-mobile{
+	width: 80%;
+	margin-left: 150px;
+	position: relative;
+}
+nav #nav-mobile .conner{
+	transition:all  1s!important;
+}
+nav #nav-mobile img{
+	position: absolute;bottom:31%;left:2%;
+}
+textarea.materialize-textarea {
+    overflow-y: hidden;
+    padding:0;
+    resize: none;
+    min-height: 3rem;
+    border-bottom: 1px solid #fff;
+}
+.input-field .prefix {
+    position: absolute;
+    right: -10%;
+    width: 3rem;
+    font-size: 2rem;
+    transition: color .2s;
+}
+/********banner***/
+.carousel-item{
+	background-image:url(../img/bg.jpg) ;
+	padding: 0px 10%;
+}
+/******内容1****/
+.blocktitle {
+    margin: 0 0 20px;
+    border-bottom: 1px solid #C8CDD3;
+    height: 30px;
+    padding: 0;
+    overflow: visible;
+}
+.titletext {
+	display: inline-block;
+	height: 28px;
+    color: #505B63;
+    border-bottom: 1px solid #84909E;
+    position: relative;
+    line-height: normal;
+    
+}
+.image-layer {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.image-layer:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 0px solid;
+    border-color: rgba(0, 0, 0, 0.2) #fff;
+    -webkit-transition: border .5s ease; 
+}
+.image-layer:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 0px solid;
+    border-color: rgba(91,173,255,1) #fff;
+    -webkit-transition: border .5s ease; 
+}
+.image-layer:hover:before {
+    border-right-width: 20px;
+    border-top-width: 20px
+}
+.image-layer:hover:after {
+    border-right-width: 20px;
+    border-top-width: 20px
+}
+
+.pic_info {
+	padding-top: 20px;
+    position: absolute;
+    display: none;
+   	top: 0;
+    width: 100%;
+   /* background-color: rgba(61,159,255,0.9);*/
+    color: #333;
+   	text-align: center;
+   	font-weight: 700;
+   	cursor: pointer;
+}
+.pic_info dd a.more {
+	font-size: 12px;
+    display: inline-block;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    color: #FFF;
+    line-height:20px;
+    padding: 0px 10px;
+    margin-top: 20px;
+}
+.hot-label .btn{
+	background: rgba(91,173,255,0);
+	border-radius: 20px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16), 0 0px 0px 0 rgba(0, 0, 0, 0.12);
+	border: 1px solid #ddd;
+	color: #333;
+	padding: 0px 15px;
+	font-size: 12px;
+}
+.hot-label .btn:hover{
+	background: rgba(91,173,255,1);
+	color: #fff;
+	border: 0;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	
+}
+.server-box li{
+	padding: 0px 10px;
+	position: relative;
+	
+}
+.server-box li:first-child div{
+	position: absolute;left: 50%;
+	display: inline-block;
+    background: url(../img/service_vivo.png) no-repeat 0 0 ;
+    background-size:100% 100% ;
+    overflow: hidden;
+	
+}
+.server-box li:nth-child(2) div{
+	position: absolute;left: 50%;
+	display: inline-block;
+    background: url(../img/weixin.png) no-repeat 0 0 ;
+  
+  background-size:100% 100% ;
+    overflow: hidden;
+}
+.server-box li:nth-child(3) div{
+	position: absolute;left: 50%;
+	display: inline-block;
+    background: url(../img/weibo.png) no-repeat 0 0 ;
+  	background-size:100% 100% ;
+    overflow: hidden;
+}
+.server-box li a{
+	/*position: absolute;top: 100%;*/
+	/*margin-top:4rem;*/
+	/*line-height: 4rem;*/
+	text-align: center;
+	display: block;
+    font-size: 20px;
+    color: #5a646c;
+}
+.hot-bankuai-one img{
+	position: absolute;left: 50%;
+	margin-left:-41px;
+}
+.hot-bankuai-two img{
+	position: absolute;left: 50%;
+	margin-left:-41px;
+}
+.hot-bankuai-three img{
+	position: absolute;left: 50%;
+	margin-left:-41px;
+}
+.hot-bankuai-four img{
+	position: absolute;left: 50%;
+	margin-left:-41px;
+}
+.hot-rew {
+	font-size: 12px;
+}
+.ellipsis-3 {
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal!important;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical
+}
+.ellipsis-1 {
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal!important;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical
+}
+
+/*****悬停效果******/
+.grid {
+	position: relative;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin:3px;
+	/*width: 33.3%;*/
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	color: #fff;
+	text-transform: uppercase;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/***** Bubba *****/
+/*---------------*/
+
+figure.effect-bubba {
+	background: rgba(0,0,0,1);
+	padding-right: 0;
+}
+
+figure.effect-bubba img {
+	opacity: 0.8;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-bubba:hover img {
+	opacity: 0.4;
+}
+
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.85s, -webkit-transform 0.85s;
+	transition: opacity 0.85s, transform 0.85s;
+}
+
+figure.effect-bubba figcaption::before {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+figure.effect-bubba figcaption::after {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	-webkit-transform: scale(1,0);
+	transform: scale(1,0);
+}
+figure.effect-bubba p {
+	line-height:1000%;
+	text-align: center;
+	opacity: 0;
+	-webkit-transition: opacity 0.85s, -webkit-transform 0.85s;
+	transition: opacity 0.85s, transform 0.85s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-bubba:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/*---------------*/
+/*****脚部***/
+footer.page-footer{
+	background: #f8f9fb;
+}
+.foot-content p{
+	font-size: 6px!important;
+}
+.foot-content a{
+	font-size: 6px;
+	color: #677179;
+}
+.xs0 {
+    font-size: 6px!important;
+    color: #677179;
+}
+footer ul li img{
+	height: 30px;
+	width: 30px;
+}
